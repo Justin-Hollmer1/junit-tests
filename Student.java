@@ -4,11 +4,12 @@ public class Student  {
 
     public long id;
     public String name;
-    public ArrayList<Integer> grades = new ArrayList<>();
+    public ArrayList<Integer> grades;
 
-    public Student(String name, long id) {
+    public Student(String name, long id, ArrayList<Integer> grades) {
         this.name = name;
         this.id = id;
+        this.grades = grades;
     }
 
     public long getId() {
